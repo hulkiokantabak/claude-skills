@@ -61,7 +61,7 @@ Each skill has an `## Example Prompts` section in its `SKILL.md` showing both tr
 
 ## Running Without Claude Code
 
-If you want to run one of these workflows in a Claude context that doesn't support skills (bare API call, Claude Desktop without skills, another LLM entirely), open the skill's `references/export-pack.md` and paste the "Portable Core Bundle" block, then a wrapper from `references/claude-export.md`.
+If you want to run one of these workflows in a Claude context that doesn't support skills (bare API call, Claude Desktop without skills, another LLM entirely), open the skill's `references/export-pack.md` and paste the "Portable Core Bundle" block, then a wrapper from `references/claude-export.md`. The three roundtable skills (`fx-experts`, `game-design-experts`, `deep-thinkers`) ship both files; `fx-tool-build` is a build guide with a single `references/build-guidelines.md` and has no export pack.
 
 ## Adding A New Skill
 
@@ -71,6 +71,8 @@ If you want to run one of these workflows in a Claude context that doesn't suppo
 4. Commit and push.
 
 ## Skill Structure
+
+A typical layout — individual skills vary (e.g. `fx-experts` defines its on-call specialists inline in `SKILL.md`, and `fx-tool-build` carries only a build-guidelines reference):
 
 ```
 <skill-name>/
